@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Function to convert Decimal to Binary
+// Decimal to Binary
 void decToBin(int n) {
     if (n == 0) {
         printf("0");
@@ -17,7 +17,7 @@ void decToBin(int n) {
     }
 }
 
-// Function to convert Decimal to Octal
+// Decimal to Octal
 void decToOct(int n) {
     if (n == 0) {
         printf("0");
@@ -33,7 +33,7 @@ void decToOct(int n) {
     }
 }
 
-// Function to convert Decimal to Hexadecimal
+// Decimal to Hexadecimal
 void decToHex(int n) {
     if (n == 0) {
         printf("0");
@@ -51,7 +51,7 @@ void decToHex(int n) {
     }
 }
 
-// Function to convert Binary to Decimal
+// Binary to Decimal
 int binToDec(long long n) {
     int decimal = 0, base = 1, rem;
     while (n > 0) {
@@ -63,7 +63,7 @@ int binToDec(long long n) {
     return decimal;
 }
 
-// Function to convert Octal to Decimal
+// Octal to Decimal
 int octToDec(int n) {
     int decimal = 0, base = 1, rem;
     while (n > 0) {
@@ -75,7 +75,7 @@ int octToDec(int n) {
     return decimal;
 }
 
-// Function to convert Hexadecimal to Decimal
+// Hexadecimal to Decimal
 int hexToDec(char hex[]) {
     int decimal = 0, base = 1, i = 0;
     while (hex[i]) {
@@ -102,12 +102,12 @@ int main() {
     char hex[32];
 
     while (1) {
-        printf("\n--- Number System Converter ---\n");
-        printf("1. Decimal to Binary/Octal/Hex\n");
+        printf("\nNumber System Converter By Safwan Safat\n\n");
+        printf("1. Decimal to Binary, Octal, Hexadecimal\n");
         printf("2. Binary to Decimal\n");
         printf("3. Octal to Decimal\n");
         printf("4. Hexadecimal to Decimal\n");
-        printf("5. Exit\n");
+        printf("5. Exit\n\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
@@ -139,7 +139,7 @@ int main() {
                 printf("Exiting...\n");
                 exit(0);
             default:
-                printf("Invalid choice! Try again.\n");
+                printf("Invalid! Pick among 1 to 5 & try again.\n");
         }
     }
     return 0;
