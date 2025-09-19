@@ -139,7 +139,7 @@ int main() {
                 printf("Exiting...\n");
                 exit(0);
             default:
-                printf("Invalid! Pick among 1 to 5 & try again.\n");
+                printf("Invalid choice! Pick among the visible options and try again.\n");
         }
     }
     return 0;
