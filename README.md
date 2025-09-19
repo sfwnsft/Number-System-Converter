@@ -1,4 +1,4 @@
-# Number-System-Converter
+# Number System Converter
 A simple C program that converts numbers between different number systems.
 
 Features:
